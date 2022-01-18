@@ -1,0 +1,503 @@
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta http-equiv="content-language" content="en" />
+			<meta http-equiv="expires" content="0">
+			<meta htpp-equiv="cache-control" content="public">
+			<meta htpp-equiv="cache-control" content="max-age=2592000">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Sihua Tech - Products</title>
+			<link rel="icon" type="image/png" href="img/icon.ico">
+			<meta name="description" content="" />
+			<meta name="author" content="KAMENG WU"/>
+
+			<!-- Bootstrap -->
+			<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+			<!-- Owl -->
+			<link rel="stylesheet" type="text/css" href="css/owl.css">
+			<!-- Main style -->
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+			<!--Products Style-->
+			<link rel="stylesheet" type="text/css" href="css/subnav.css">
+			<link rel="stylesheet" type="text/css" href="css/products.css">
+			<link rel="stylesheet" href="css/fullslider.css" >
+
+			<!-- Scripts -->
+			<!-- Script to Activate the Carousel -->
+			<script src="js/jquery-1.11.1.min.js"></script>
+			<script src="js/owl.carousel.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/main.js"></script>
+			<script src="js/typewriter.js"></script>
+			<script src="js/applyForTry.js"></script>
+
+
+			
+			<script>
+			$(document).ready(function(){
+				$("#myCarousel").carousel({interval : false});
+				function getSlideParameter(key) {
+					key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&");
+					var match = location.search.match(new RegExp("[?&]" + key + "=([^&]+)(&|$)"));
+					var slide = match && decodeURIComponent(match[1].replace(/\+/g, " "));
+					if (Math.floor(slide) == slide && $.isNumeric(slide))
+						return parseInt(slide);
+					    
+					else
+						return 0;
+				}
+				$('#myCarousel').carousel(getSlideParameter('slide'));
+			})
+			</script>
+
+
+		</head>
+
+
+		<body>
+
+			<nav class="navbar">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html"><img style="height:40px;" src="img/logo.png" data-active-url="img/logo.png" alt=""></a>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right main-nav">
+							<li><a href="index.html">Home</a></a>
+							</li>
+							<li><a href="products.html">Products</a>
+								<ul>
+									<li><a href="products.html?slide=0">Express VM</a></li>
+									<li><a href="products.html?slide=1">Megabric</a></li>
+									<li><a href="products.html?slide=2">XOS</a></li>
+								</ul>
+							</li>
+							<li><a href="about.html">About</a>
+
+							</li>
+							<li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-red">Try It Now</a></li>
+						</ul>
+					</div>
+
+					<!-- /.navbar-collapse -->
+				</div>			
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+					<ul>
+						<li><a href="products.html?slide=0">Express VM</a></li>
+						<li><a href="products.html?slide=1">Megabric</a></li>
+						<li><a href="products.html?slide=2">XOS</a></li>
+					</ul>
+				</div>
+				<!-- /.container-fluid -->
+			</nav>
+
+			<!-- Holder for mobile navigation -->
+			<div class="mobile-nav">
+				<ul>
+				</ul>
+				<a href="#" class="close-link">&#10005</a>
+			</div>
+
+			<div id="myCarousel" class="carousel slide">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<button data-target="#myCarousel" data-slide-to="0" class="active">Express VM</button>
+					<button data-target="#myCarousel" data-slide-to="1">Megabric</button>
+					<button data-target="#myCarousel" data-slide-to="2">XOS</button>
+				</ol>
+
+				<!-- Wrapper for Slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<!-- Set the first background image using inline CSS below. -->
+						<div class="fill" style="background-image:url('img/background/blackgrey.png'); background-position:15%;"> 
+							<div class="col-sm-12">		   	
+								<h1 class="red"><img src="img/font/expressvm.png"></h1>
+								<h4 class="white space">Pure Software Defined Storage</h4>
+							</div>
+						</div>
+
+						<section class="section section-padded">	
+							<div class="container">
+								<div class="row product">
+									<div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1">	
+										<div class="row title">
+											<h2>Express VM</h2>
+											<h5 class="dark space">Pure Software Defined Storage</h5>
+											<p><a href="resource/expressvm.pdf" target="_blank">View Product Manual</a><p>
+											</div>
+										</div>
+										<div class="col-md-6 col-sm-6">
+											<div>
+												<img src="img/product_icon/evm.gif">
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+
+
+							<section class="product_features section section-padded">
+								<div class="container">
+									<div class="row">
+										<div class="head col-md-12">
+											<h3 class="black">Express VM Vs. Traditional Storage</h3>
+											<h6 class="dark space">Express VM integrates calculation, storage and ultralight IT infrastructure. The whole process, from operation, maintenance to management and expansion, will provide you with incomparable efficiency.</h6>
+										</div>
+
+										<hr>
+
+										<div class="content">
+											<div class="each">
+												<div class="right col-md-4 col-sm-4">
+													<h5 class="bold black"> Express VM</h5>
+													<h6 class="dark">Scale-out,Best Price performance</h6>
+												</div>
+												<div class="col-md-4 col-sm-4">
+													<img src="img/features/evmprice.png">
+												</div>
+												<div class="left col-md-4 col-sm-4">
+													<h5 class="bold black">Traditional storage</h5>
+													<h6 class="dark">Difficult to Expand</h6>
+												</div>
+											</div>
+											<hr class="sub">
+											<div class="each">
+												<div class="right col-md-4 col-sm-4">
+													<h5 class="bold black">Express VM</h5>
+													<h6>Commodity Hardware Platform , Unified Computing/Storage Management</h6>
+												</div>
+												<div class="col-md-4 col-sm-4">
+													<img src="img/features/evmmanage.png">
+												</div>
+												<div class="left col-md-4 col-sm-4">
+													<h5 class="bold black">Traditional storage</h5>
+													<h6>Special storage hardware, Complex configuration management</h6>
+												</div>
+											</div>
+											<hr class="sub">
+											<div class="each">
+												<div class="right col-md-4 col-sm-4">
+													<h5 class="bold black">Express VM</h5>
+													<h6 class="dark">One VM can easily reach 10000 IOPS</h6>
+												</div>
+												<div class="col-md-4 col-sm-4">
+													<img src="img/features/evmperformance.png">
+												</div>
+												<div class="left col-md-4 col-sm-4" >
+													<h5 class="bold black">Traditional storage</h5>
+													<h6 class="dark">One headpiece of 3000 IOPS, Performance always degrade over time</h6>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div><!--evm-->
+
+						<div class="item">
+							<div class="fill" style="background-image:url('img/background/blackgrey1.png'); background-position:60%;">
+								<div class="col-sm-12">		            	
+									<h1 class="red"><img src="img/font/megabric.png"></h1>
+									<h4 class="white space">It meets the mass storage of the elastically expanded businesses</h4>
+								</div>
+							</div>
+
+							<section class="section section-padded">	
+								<div class="container">
+									<div class="row product">
+										<div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1">	
+											<div class="row title">
+												<h2>Megabric</h2>
+												<h5 class="dark space">It meets the mass storage of the elastically expanded businesses</h5>
+												<p><a href="resource/megabric.pdf" target="_blank">View Product Manual</a></p>
+											</div>
+										</div>
+										<div class="col-md-6 col-sm-6">
+											<div>
+												<img src="img/product_icon/megabric.gif">
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+
+							<section class="product_features section section-padded">
+								<div class="container">
+									<div class="row">
+										<div class="head col-md-9 col-md-offset-3 col-xs-12 right">
+											<h3 class="black">Features</h3>
+											<h6 class="dark space">The distributed storage achieves the scale-out archetecture and supports the expansion when needed. It achieves a really low TCO!</h6>
+										</div>
+										<hr>
+
+										<div class="content">
+											<div class="each ">
+												<div class="left narrow col-md-7 col-sm-7">
+													<h5 class="properties bold black">Data Protection</h5>
+													<h6 class="dark">Megabric can support various demands of the business redundancy, so as to provide support for different levels of data redundancy.</h6>
+												</div>
+												<div class="col-md-5 col-sm-5">
+													<img src="img/features/megabricdata.png">
+												</div>
+											</div>
+
+											<hr class="sub">
+
+											<div class="each">
+												<div class="left narrow col-md-7 col-sm-7">
+													<h5 class="properties bold black">Turbo Speed</h5>
+													<h6 class="dark">Megabric fully unitize flash memory to accelerate the reading and writing; it uses the wired equivalent systematic structure to make sure there is no cluster bottleneck, so as to give full play to the performances of the storage nodes and achieve the highest performances.</h6>
+												</div>
+												<div class="col-md-5 col-sm-5">
+													<img src="img/features/megabricproperty.png">
+												</div>
+											</div>
+
+											<hr class="sub">
+
+											<div class="each">
+												<div class="left narrow col-md-7 col-sm-7">
+													<h5 class="properties bold black">Cloud Ready Storage</h5>
+													<h6 class="dark">Megabric cluster storage adopts an open attitude to make constant innovations to adapt to the cloud computing technology, and helps our customer transform their IT infrastructure.</h6>
+												</div>
+												<div class="col-md-5 col-sm-5">
+													<img src="img/features/megabricdemand.png">
+												</div>
+											</div>
+
+
+											<hr class="sub">
+
+											<div class="each">
+												<div class="left narrow col-md-7 col-sm-7">
+													<h5 class="properties bold black">Low TCO</h5>
+													<h6 class="dark">Megabric adopts various means to lower the TCO(Total Cost of Ownership). For example, it comes with high-density storage nodes to provide a bigger storage capacity and performances. Meanwhile, it uses the advanced EC technology to reduce the storage footprint without reducing  data redundancy level. It also adopts green technologies to decrease the consumption of power.</h6>
+												</div>
+												<div class="col-md-5 col-sm-5">
+													<img src="img/features/megabrictco.png">
+												</div>
+											</div>
+
+											<div class="each">
+												<div class="left narrow col-md-7 col-sm-7">
+													<h5 class="properties bold black">Unified Management</h5>
+													<h6 class="dark">Magabric offers a very user friendly web GUI to manage all the storage resource in one place.</h6>
+												</div>
+												<div class="col-md-5 col-sm-5">
+													<img src="img/features/megabricmanage.png">
+												</div>
+											</div>
+
+
+										</div>
+									</div>
+								</div>
+							</section>
+						</div><!--megabric-->
+
+						<div class="item">
+							<!-- Set the third background image using inline CSS below. -->
+							<div class="fill" style="background-image:url('img/background/blackgrey.png'); background-position:90%;">
+								<div class="col-sm-12">	    	
+									<h1 class="red"><img src="img/font/xos.png"></h1>
+									<h4 class="white space">Private cloud platform with full function</h4>
+								</div>
+							</div>
+
+							<section class="section section-padded">	
+								<div class="container">
+									<div class="row product">
+										<div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1">	
+											<div class="row title">
+												<h2>XOS</h2>
+												<h5 class="space dark">Private cloud platform with full enterprise function, it unifies the IT architecture of enterprises into one platform.</h5>
+												<p><a href="resource/expressvm.pdf" target="_blank">View Product Manual</a></p>
+											</div>
+										</div>
+										<div class="col-md-6 col-sm-6">
+											<div>
+												<img src="img/product_icon/xos.gif">
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+
+							<section class="product_features section section-padded">	
+								<div class="container">
+									<div class="row">
+										<div class="head col-md-9 col-md-offset-3 col-xs-12 right">
+											<h3 class="black">Features</h3>
+											<h6 class="dark space">Private cloud platform with full enterprise function, it unifies the IT architecture of enterprises into one platform.</h6>
+										</div>
+										<hr>
+
+										<div class="content">
+											<div class="each">
+												<div class="left narrow col-md-7 col-sm-7">
+													<h5 class="properties bold black">Instant Deployment</h5>
+													<h6 class="dark">Deploy your VM in just few seconds. XOS allows you have instant snapshot or flexible back up for all the cloud resource.</h6>
+												</div>
+												<div class="col-md-5 col-sm-5">
+													<img src="img/features/xosarrange.png">
+												</div>
+											</div>
+
+
+											<hr class="sub">
+
+
+											<div class="each">
+												<div class="left narrow col-md-7 col-sm-7">
+													<h5 class="properties bold black">Online Migration</h5>
+													<h6 class="dark">Cloud host could live migrate safely across physical servers, no business interruption during migrating</h6>
+												</div>
+												<div class="col-md-5 col-sm-5">
+													<img src="img/features/xosmigration.png">
+												</div>
+											</div>
+
+
+											<hr class="sub">
+
+
+											<div class="each">
+												<div class="left narrow col-md-7 col-sm-7">
+													<h5 class="properties bold black">Simplified management</h5>
+													<h6 class="dark">By integrating traditional data center resources on the platform, XOS could provide service of resources coveraged and visualized to IT admin</h6>
+												</div>
+												<div class="col-md-5 col-sm-5">
+													<img src="img/features/xosmanage.png">
+												</div>
+											</div>
+
+
+											<hr class="sub">
+
+
+											<div class="each">
+												<div class="left narrow col-md-7 col-sm-7">
+													<h5 class="properties bold black">Network isolation</h5>
+													<h6 class="dark">Generate multiple Layer2/3 virtual networks by a few clicks. Virtual networks are isolated from each other just like using the physical network.</h6>
+												</div>
+												<div class="col-md-5 col-sm-5">
+													<img src="img/features/xossafe.png">
+												</div>
+											</div>
+
+											<hr class="sub">
+
+											<div class="each">
+												<div class="left narrow col-md-7 col-sm-7">
+													<h5 class="properties bold black">One-Click expansion</h5>
+													<h6 class="dark">Increase your Resource pool by just a few clicks</h6>
+												</div>
+												<div class="col-md-5 col-sm-5">
+													<img src="img/features/xosextension.png">
+												</div>
+											</div>
+
+
+											<hr class="sub">
+
+											<div class="each">
+												<div class="left narrow col-md-7 col-sm-7">
+													<h5 class="properties bold black">Business Never Stops</h5>
+													<h6 class="dark">XOS leverages multiple underly technology to ensure high availability for customer’s business.</h6>
+												</div>
+												<div class="col-md-3 col-md-offset-1">
+													<img src="img/features/xosinterrupt.png">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>			
+						</div><!-- XOS -->
+
+					</div>
+
+					<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content modal-popup">
+								<a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
+								<h3 class="white">Trial Application</h3>
+								<form action="" class="popup-form">
+									<input type="text" class="form-control form-white" placeholder="Full Name" id="username" required onchange="submitCheck()" >
+					<input type="email" class="form-control form-white" placeholder="Email Address" id="emailAddress" required onchange="submitCheck()" >
+					<div class="dropdown">
+						<button id="dLabel" class="form-control form-white dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Select Production
+						</button>
+						<ul class="dropdown-menu animated fadeIn" role="menu" aria-labelledby="dLabel">
+							<li class="animated lightSpeedIn"><a href="javascript:selFn('Express VM')">Express VM</a></li>
+							<li class="animated lightSpeedIn"><a href="javascript:selFn('Megabric')">Megabric</a></li>
+							<li class="animated lightSpeedIn"><a href="javascript:selFn('XOS')">XOS</a></li>
+						</ul>
+					</div>
+					<div class="checkbox-holder text-left">
+						<div class="checkbox">
+							<input type="checkbox" value="None" id="squaredOne" name="check" checked="checked" onclick="agree()" />
+							<label for="squaredOne"><span>I Agree to the <strong>Terms &amp; Conditions</strong></span></label>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-submit" onclick="applyForTry()" id="submitApply" disabled="disabled" >Submit</button>
+					<a href="mailto:" id="mailto" style="display:none"></a>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<footer>
+						<div class="container">
+							<div class="row">
+								<div class="col-sm-5 ">
+									<h3 class="red"><img src="img/font/trialapplication.png"></h3>
+									<h5 class="white">Take a test drive now!</h5>
+									<a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-red space">Try It Now</a>
+								</div>
+								<div class="col-sm-6  col-sm-offset-1">
+									<div class="row footnav">
+										<div class="col-sm-5 col-md-offset-1">
+											<h5 class=" heading white">Products</h5>
+											<h6 class="space"><a class="white" href="products.html?slide=0">ExpressVM</a></h6>
+											<h6><a class="white" href="products.html?slide=1">Megabric</a></h6>
+											<h6><a class="white" href="products.html?slide=2">XOS</a></h6>
+										</div>
+										<div class="col-sm-5 col-md-offset-1">
+											<h5 class=" heading white">About Us</h5>
+											<h6 class="space"><a class="white" href="about.html#about">Our Company</a></h6>
+											<h6><a class="white" href="about.html#partners">Our Partners</a></h6>
+											<h6><a class="white" href="about.html#resource">Resource Download</a></h6>
+											<h6><a class="white" href="about.html#contact">Contact Us</a></h6>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row bottom-footer">
+								<div id="copyright" class="col-sm-8">
+									<p class="white">&copy; 2016 All Rights Reserved by <a href="index.html" style="font-weight:400;">Sihua Tech</a></p>
+								</div>
+									<div id="copyright" class="col-sm-4">
+										<a href="http://www.kaixiangtech.com"><img src="img/kxsublogo.png"></a>
+									</div>
+							</div>
+						</div>
+					</footer>
+
+
+				</body>
+
+				</html>

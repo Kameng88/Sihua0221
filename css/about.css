@@ -1,0 +1,112 @@
+
+#intro{
+	background: url('../img/background/blackred1.png');
+	background-repeat:no-repeat;
+	background-size:auto 100%;
+	background-position: 40%;
+}
+
+
+#about{
+	padding:120px 40px;
+	text-align: right;
+}
+
+#about h4{
+	border-right:2px solid #dc2426;
+	padding-right: 30px;
+	margin: 35px 0;
+}
+
+#partners{
+	background: url('../img/background/blackred2.png');
+	background-size: auto 100%;
+	padding:70px 70px;  
+	background-position: 40%;
+	text-align: center;
+}
+
+.partners img{
+	height:32px;
+	margin:5px 35px 50px 35px;
+}
+
+#resource{
+	padding: 120px 0;
+
+}
+
+#resource .download{
+	margin-top: 30px;
+	padding: 15px 40px;
+}
+
+#contact h5{
+	padding-bottom: 15px;
+	line-height: 22px;
+}
+
+
+
+
+
+@media (max-width: 992px){
+	#about{
+		padding-left:0;
+		padding-right: 0;
+		text-align: right;
+	}
+
+
+}
+
+
+
+
+@media (max-width: 768px){
+	#about{
+		text-align: center;
+	}
+
+	#about h4{
+		border-right:0px solid #dc2426;
+		padding:0;
+	}
+
+	#resource{
+		text-align: center;
+	}
+
+	#contact{
+		text-align:center;
+	}
+
+	#contact h5{
+	padding-bottom: 20px;
+	}
+
+	#contactinfo{
+	padding-top: 60px;
+	}
+
+	#try{
+		padding: 40px 0;
+	}
+
+}
+
+
+@media (max-width: 400px){
+	#about{
+		text-align: center;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+
+}
+
+
+
+
+
